@@ -1,0 +1,15 @@
+@use "./config" as c;
+@use "./atoms" as a;
+@use "./organisms" as o;
+
+* {
+  border-radius: c.$radius;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: c.$bp-tablet) {
+  @import "./views/tablet";
+}
+@media only screen and (min-width: c.$bp-desktop) {
+  @import "./views/desktop";
+}

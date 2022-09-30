@@ -1,0 +1,90 @@
+@use "../config" as c;
+h1 {
+  font-size: c.rem(72px);
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  nav {
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+}
+#searchDiv {
+  margin-top: 0px;
+  flex-grow: 1;
+  button {
+    right: 1%;
+  }
+}
+#articles {
+  display: flex;
+  flex-direction: row;
+  div {
+    flex: 1 1;
+  }
+}
+#twoArticles {
+  margin-right: 15px;
+}
+
+#noMarginArticle {
+  margin-top: 0px;
+}
+#cards {
+  flex-direction: row;
+  #twoCards {
+    width: 67%;
+    button {
+      width: 49.5%;
+    }
+  }
+  #twoCards button h2 {
+    font-size: c.rem(36px);
+  }
+  #imgDiv {
+    width: 33%;
+    margin-left: 1%;
+  }
+  div img {
+    margin-top: 0px;
+  }
+}
+#imgDiv :hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 1s;
+}
+footer form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#subscribeDiv {
+  justify-content: space-between;
+  input {
+    margin-bottom: 15px;
+  }
+}
+#subscribeButtons {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  button {
+    width: 260px;
+  }
+}
+footer nav {
+  margin-top: 20px;
+}
+#cookies {
+  max-width: 100%;
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+ul li {
+  padding-right: 17px;
+}

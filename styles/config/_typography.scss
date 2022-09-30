@@ -1,0 +1,47 @@
+@use "./mixins" as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+$font:'Quicksand', sans-serif;
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body{
+  font-family: $font;
+}
+
+h1{
+    font-size: m.rem(40px);
+    font-weight: 400;
+}
+
+h2{
+    font-size: m.rem(36px);  
+    font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight:600;
+}
+
+h5 {
+  font-weight:500;
+}
+
+h6 {
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+h3, h4, h5, h6, p{
+    font-size: m.rem(18px);
+}
+a{
+  font-size: m.rem(22px);
+}

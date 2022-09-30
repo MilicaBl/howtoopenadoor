@@ -1,0 +1,24 @@
+@use "../config" as c;
+
+button {
+  background-color: c.$blue;
+  border: none;
+  box-shadow: c.$drop-shadow;
+  color: c.$white;
+  font-weight: 400;
+  font-size: c.rem(36px);
+}
+button:hover {
+  background-color: c.$hover-button;
+  color: c.$black;
+  cursor: pointer;
+}
+button:active {
+  background-color: c.$click-button;
+  color: c.$black;
+}
+button:disabled {
+  background-color: c.$disabled-button;
+  color: c.$white;
+  cursor: auto;
+}

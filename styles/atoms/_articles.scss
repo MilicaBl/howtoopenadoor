@@ -1,0 +1,22 @@
+@use "../config" as c;
+
+article {
+  background-color: c.$light-blue;
+  padding: 15px;
+  margin-top: 12px;
+  box-shadow: c.$drop-shadow;
+  p {
+    margin-top: 15px;
+  }
+  //This link had to be different from design in all states because of accessibility   
+  a:hover,
+  a:active {
+    font-weight: 600;
+  }
+  a {
+    color: c.$black;
+  }
+}
+#firstArticle {
+  margin: 0px;
+}

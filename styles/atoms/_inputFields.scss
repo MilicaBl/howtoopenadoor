@@ -1,0 +1,7 @@
+@use "../config" as c;
+input{
+    font-size: c.rem(24px);
+    padding: 17px; 
+    border:none;
+    width:100%
+}

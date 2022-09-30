@@ -1,0 +1,14 @@
+@use "../config" as c;
+
+a {
+  color: c.$white;
+  font-weight: 400;
+}
+li a {
+  text-decoration: none;
+  padding-right: 10%;
+}
+li a:hover,
+a:active {
+  font-weight: 800;
+}

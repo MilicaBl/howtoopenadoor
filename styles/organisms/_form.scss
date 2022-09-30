@@ -1,0 +1,24 @@
+@use "../config" as c;
+form {
+  margin-top: 11px;
+  background-color: c.$blue;
+  padding: 14px;
+  box-shadow: c.$drop-shadow;
+  div {
+    border-radius: 0px;
+    padding: 14px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: c.rem(36px);
+    background-color: c.$light-blue;
+    button {
+      margin-top: 17px;
+      padding: 15px 0px;
+    }
+  }
+  #subscribeButtons {
+    padding-top: 0px;
+    padding-bottom: 14px;
+  }
+}

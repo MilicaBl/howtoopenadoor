@@ -1,0 +1,19 @@
+// COLORS
+$blue:#137BA4;//Original color in design is #16A0CA it had to be changed because of accessibility (low contrast) ;
+$light-blue:#5EC6E6;
+$white: #fff;
+$black: #000;
+//button colors
+$hover-button:#36D1FF;
+$click-button: #1391B7;
+$disabled-button:#8A8A8A;
+
+//BORDER_RADIUS 
+$radius:10px;
+
+//DROPSHADOW
+$drop-shadow:2px 2px 4px hsl(0, 0%, 0%, 25%);
+
+// BREAKPOINTS
+$bp-tablet: 805px;
+$bp-desktop: 1310px;

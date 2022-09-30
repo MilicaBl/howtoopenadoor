@@ -1,0 +1,9 @@
+@use "../config" as c;
+
+main {
+  margin-top: 15px;
+}
+main section {
+  background-color: c.$blue;
+  padding: 15px;
+}

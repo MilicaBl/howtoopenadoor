@@ -1,0 +1,35 @@
+@use "../config" as c;
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+#logo {
+  background-color: c.$blue;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: c.$white;
+  margin-bottom: 14px;
+  box-shadow: c.$drop-shadow;
+}
+#doorSvg {
+  margin: 14px 10px 10px 14px;
+}
+#searchDiv {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-shadow: c.$drop-shadow;
+  button {
+    padding: 17px;
+    font-size: c.rem(24px);
+    position: absolute;
+    right: 0%;
+  }
+  input {
+    position: relative;
+    width: 90%;
+  }
+}

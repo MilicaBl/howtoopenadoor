@@ -1,0 +1,12 @@
+@use "../config" as c;
+
+footer nav {
+  margin-top: 12px;
+  box-shadow: c.$drop-shadow;
+  ul li {
+    width: 33%;
+    a {
+      font-size: c.rem(36px);
+    }
+  }
+}
