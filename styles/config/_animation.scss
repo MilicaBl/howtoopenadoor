@@ -1,0 +1,17 @@
+@keyframes openADoor {
+  from {
+    transform: perspective(0px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1200px) rotateY(-45deg);
+  }
+}
+.inner {
+  animation-duration: 3s;
+  animation-name: openADoor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.doorOpen {
+  animation: none;
+}

@@ -18,7 +18,6 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <!-- <meta name="msapplication-TileColor" content="#da532c" /> -->
-    
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -31,7 +30,10 @@
             id="doorSvg"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="90"
+            rel="stylesheet"
+            href="./styles/style.css"
+            type="text/css"
+            width="100"
             height="131"
             viewBox="0 0 90 131"
           >
@@ -43,10 +45,11 @@
             />
             <image
               id="inner"
-              x="19"
-              y="19"
-              width="61"
-              height="105"
+              class="inner"
+              x="0"
+              y="8"
+              width="87"
+              height="115"
               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAAEFCAYAAABgnDz5AAAEU0lEQVR4nO3csYoVZxiA4c8kvVimsRFSWGtlmq0FsfESBG8gbYq03oDgJdiIYJ0mVlrb2XgDYS8gOWFh0rgWc2T3+ML/POUOOx//OS+zzJ7zz43D4XAY+M5+8AZQIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEjCT94GvvB+Zt7NzIeZ+Tgzn2fm75m5NTO3Z+buzNybmQczc//Sb3+jG4fD4eCdYGbezsyrmXk9M+c7XpCbM/N4Zp7MzMNLR48kRD7NzIuZebkzwC9dBPl0Zp7NzJ1LR3cS4tr+mpnnM/PmCl6FRzPz28z8eunIDkJc10WEv8/Mn1f4CpzNzB/fEqO75jV92q6EVxnhbOd7vp3/KEJc04sr+nP8NW+28x9FiOt5u92YXKeX25zdhLieV994d3yM823ObkJcy/vt/4Sn8Hqbt4sQ1/LuBFfD/51v83YR4lo+nHi1u+cJcS0fT7za3fOEuJbPJ17t7nk+WVnLjzPz7wlXfHGh++fST7/CFXEtt0682t3zhLiW2yde7e55QlzL3ROvdvc8Ia7l3olXu3ueENfyYPsi6ync3ObtIsS13N++3n8Kj4/Z0yLE9Tw5wVXx5jZnNyGu5+G2x+Q6PT12Q5UQ1/Rs22NyHR5t5z+KENd0Z9vodHbFqz/bznv0bj4f8a0ts4vPkx7WdhHNzzPzi33NVHjSAymefcO63DWTIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShEiCEEkQIglCJEGIJAiRBCGSIEQShMj3NzP/AeThcAXmZd/AAAAAAElFTkSuQmCC"
             />
           </svg>
@@ -70,7 +73,12 @@
             </ul>
           </nav>
           <div id="searchDiv">
-            <input  id="searchInput" type="text" placeholder="Search..." aria-labelledby="Search" />
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Search..."
+              aria-labelledby="Search"
+            />
             <button type="submit" id="searchBtn">Search</button>
           </div>
         </div>
@@ -160,13 +168,22 @@
             />
           </div>
           <div id="subscribeButtons">
-            <button class="subscribeBtn" name="subscribeButton" type="submit">Subscribe</button>
-            <button class="unSubscribeBtn" name="unsubscribeButton" type="submit">Unsubscribe</button>
+            <button class="subscribeBtn" name="subscribeButton" type="submit">
+              Subscribe
+            </button>
+            <button
+              class="unSubscribeBtn"
+              name="unsubscribeButton"
+              type="submit"
+            >
+              Unsubscribe
+            </button>
           </div>
         </form>
         <nav>
           <ul>
-            <li><a href="infomation.html">Info</a></li>
+            <li id="mobileInfo"><a href="infomation.html">Info</a></li>
+            <li id="desktopInfo"><a href="infomation.html">Information</a></li>
             <li><a href="aboutus.html">About us</a></li>
             <li class="noBorder"><a href="otherstuff.html">Other stuff</a></li>
           </ul>

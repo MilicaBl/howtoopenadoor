@@ -6,7 +6,13 @@ let cookies = document.getElementById("cookies");
 let acceptBtn = document.getElementById("acceptBtn");
 let searchBtn = document.getElementById("searchBtn");
 let searchInput = document.getElementById("searchInput");
+let logo = document.querySelector(".inner");
 
+logo.addEventListener("click", toggleDoor);
+
+function toggleDoor() {
+  logo.classList.toggle("doorOpen");
+}
 acceptBtn.addEventListener("click", () => {
   cookies.style.display = "none";
 });
