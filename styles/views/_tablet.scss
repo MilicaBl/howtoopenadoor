@@ -40,7 +40,7 @@ h1 {
       width: 49.5%;
     }
   }
-  #twoCards button h2 {
+  #twoCards button {
     font-size: c.rem(36px);
   }
   #imgDiv {
@@ -88,9 +88,9 @@ footer nav {
 ul li {
   padding-right: 17px;
 }
-#mobileInfo{
-  display:none
+#mobileInfo {
+  display: none;
 }
-#desktopInfo{
-  display:inline-block
+#desktopInfo {
+  display: inline-block;
 }

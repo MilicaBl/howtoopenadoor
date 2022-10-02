@@ -1,37 +1,36 @@
 @use "../config" as c;
 #cards {
-    color: c.$white;
+  color: c.$white;
+  margin-top: 11px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  img {
     margin-top: 11px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    img {
-      margin-top: 11px;
-    }
+    width: 100%;
+    height: 100%;
   }
-  #imgDiv {
+}
+#imgDiv {
+  box-shadow: c.$drop-shadow;
+}
+#twoCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  button {
+    padding: 50px 10px;
+    width: 48%;
+    text-align: center;
+    background-color: c.$blue;
+    transition: transform 1s;
     box-shadow: c.$drop-shadow;
+    font-size: c.rem(24px);
   }
-  #twoCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    button {
-      padding: 50px 10px;
-      width: 48%;
-      text-align: center;
-      background-color: c.$blue;
-      transition: transform 1s;
-      box-shadow: c.$drop-shadow;
-      h2 {
-        font-size: c.rem(24px);
-      }
-    }
-  }
-  #twoCards button:hover {
-    background-color: c.$light-blue;
-    transform: scale(1.1, 1.1);
-    color: c.$black;
-  }
-  
+}
+#twoCards button:hover {
+  background-color: c.$light-blue;
+  transform: scale(1.1, 1.1);
+  color: c.$black;
+}
