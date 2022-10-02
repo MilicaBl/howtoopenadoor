@@ -1,4 +1,3 @@
-import  "./styles/style.css" 
 let subscribeBtn = document.querySelector(".subscribeBtn");
 let unSubscribeBtn = document.querySelector(".unSubscribeBtn");
 let input = document.getElementById("input");
